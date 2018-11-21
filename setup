@@ -13,6 +13,9 @@ echo ""
 echo ""
 if [ ${?} = '0' ]; then
 	display_help
+	echo -e "\033[34;0;4;5;7mVERIFICATIONS\033[0m"
+	echo -e " "
+	echo -e "\e[91mCe script ne doit pas être lancé en tant que root user! "
 	echo ""
 	read -p "Démarrer l'installation ? (o/n)" CHOICE_START
 

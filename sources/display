@@ -16,7 +16,7 @@ function display_help()
 	echo " - Mise à jour complète du système"
 	echo ""
 	echo " - Installation de Brew"
-	echo " - Installation de Terminator"
+	echo " - Installation de iTerm2(comme Terminator)"
 	echo " - Installation de tree"
 	echo " - Installation de GIT"
 	echo " - Installation de ZSH"

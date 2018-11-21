@@ -12,8 +12,8 @@ function start()
     brew doctor
 	echo ""
 
-	echo " ## INSTALLATION DE TERMINATOR"
-    brew install terminator
+	echo " ## INSTALLATION DE iTerm2"
+    brew cask install iterm2
 	echo ""
 
 	echo " ## INSTALLATION DE TREE"
@@ -49,7 +49,7 @@ function start()
 	echo ""
 
 	echo " ## INSTALLATION DE BLIH"
-	sudo cp ./assets/blih /usr/bin/
+	sudo cp ../binstall_files/assets/blih /usr/bin/
 	echo "DONE"
 	echo ""
 
@@ -66,6 +66,6 @@ function start()
 	echo ""
 
 	echo " ## INSTALLATION DE CSFML"
-    sh binstall_files/build_csfml install
+    sudo sh binstall_files/build_csfml install
 	echo ""
 }
