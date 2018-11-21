@@ -1,5 +1,10 @@
 #!/bin/bash
-source build_csfml
+source sources/display
+source sources/launcher
+source sources/install
+source binstall_files/config_s
+source sources/build_csfml
+source sources/blih
 
 function start()
 {
@@ -51,7 +56,7 @@ function start()
 
 	echo " ## INSTALLATION DE BLIH"
 	echo "MOT DE PASSE MACHINE ICI POUR COPIER:"
-	sudo cp -r ./assets/blih /usr/bin/
+	sudo cp -r blih /usr/bin/
 	echo "DONE"
 	echo ""
 
