@@ -29,6 +29,7 @@ if [ ${?} = '0' ]; then
 		echo "Configuration de l'environnement..."
 		sleep 3
 		config
+		echo "\033[34;0;4;5;7mPour lancer zsh executez < exec zsh > sur votre terminal.\033[0m"
 		echo "Votre environnement de travail EPITECH est prêt, bon courage."
 	else
 		echo "Abort..."
