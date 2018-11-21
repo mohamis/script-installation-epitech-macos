@@ -33,6 +33,8 @@ Ce script procède à ces installations :
   - Installation de clang 
   - Installation de python 
   - Installation de csfml
+  - Ajout des outils jetbrains
+  - Ajout d'alias
   - Génération d'une clef SSH 
   - Upload de la clef SSH sur blih 
     
