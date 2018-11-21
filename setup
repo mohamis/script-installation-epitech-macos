@@ -1,0 +1,39 @@
+#!/bin/bash
+source sources/display
+source sources/launcher
+source sources/install
+source binstall_files/config_s
+
+clear
+launcher
+echo ""
+echo "Test de connexion ..."
+ping -c 3 8.8.8.8
+echo ""
+echo ""
+if [ ${?} = '0' ]; then
+	display_help
+	echo ""
+	read -p "Démarrer l'installation ? (o/n)" CHOICE_START
+
+	if [[ $CHOICE_START =~ ^[Oo]$ ]]; then
+		start
+		echo ""
+		echo ""
+		echo ""
+		echo "Installation suivante..."
+		sleep 1
+		echo "Configuration de l'environnement..."
+		sleep 3
+		config
+		echo "Votre environnement de travail EPITECH est prêt, bon courage."
+	else
+		echo "Abort..."
+	fi
+else
+	echo "Vous devez être connecté à internet pour utiliser ce script"
+	echo "Abort..."
+	exit 1
+fi
+exit 0
+
