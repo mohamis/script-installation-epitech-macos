@@ -1,7 +1,8 @@
 # script-installation-epitech-macos
-Bienvenue sur mon Repository script-installation-epitech-macos !
+Bienvenue sur mon Repository script-installation-epitech-macos !:+1:
+
 Ici, vous retrouverez un script permettant d'installer l'environnement Epitech sur vos Mac.
-Dernière mise à jour : 11/18 par Mohamed CHARA
+- [x] Dernière mise à jour : 11/18 par Mohamed CHARA
 
 ## Authors
 _Ce script utilise ces bases ci :
@@ -14,26 +15,28 @@ _Pour tout autre problèmes contactez moi
 Il vous permet :
 - Mise à jour complète des sources
 - Mise à jour complète du système
+
 Ce script procède à ces installations :
-    	  - Installation de Brew
-	  - Installation de iTerm2 
-	  - Installation de tree 
-	  - Installation de GIT 
-	  - Installation de ZSH 
-	  - Installation de curl 
-	  - Installation de wget 
-	  - Installation de la ncurses 
-	  - Installation de valgrind 
-	  - Installation de GDB 
-	  - Installation de BLIH 
-	  - Installation de gcc 
-	  - Installation de clang 
-	  - Installation de python 
-	  - Installation de csfml
-	  - Génération d'une clef SSH 
-	  - Upload de la clef SSH sur blih 
+
+  - Installation de Brew
+  - Installation de iTerm2 
+  - Installation de tree 
+  - Installation de GIT 
+  - Installation de ZSH 
+  - Installation de curl 
+  - Installation de wget 
+  - Installation de la ncurses 
+  - Installation de valgrind 
+  - Installation de GDB 
+  - Installation de BLIH 
+  - Installation de gcc 
+  - Installation de clang 
+  - Installation de python 
+  - Installation de csfml
+  - Génération d'une clef SSH 
+  - Upload de la clef SSH sur blih 
     
-    Merci à ceux qui ont permis ce projet dont le Bocal et le Content ainsi que Guillaume Cauchois
+> Merci à ceux qui ont permis ce projet dont le Bocal et le Content ainsi que Guillaume Cauchois, qui ont fourni les script sus-mentionnés
 ## Getting Started
 
 Tout d'abord, sachez que j'ai fais ce script rapidement, il n'est peut-être pas encore fonctionnel à 100%, si vous rencontrez le moindre problème, contactez moi !
@@ -41,7 +44,6 @@ Tout d'abord, sachez que j'ai fais ce script rapidement, il n'est peut-être pas
 
 Vous avez besoin de :
 ```
--MacBook
 -MacOS
 ```
 
