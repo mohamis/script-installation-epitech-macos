@@ -65,10 +65,6 @@ function start()
     brew install python3
 	echo ""
 
-	echo " ## INSTALLATION DE URLLIB"
-    python3 binstall_files/urllib3/setup install
-	echo ""
-
 	echo " ## INSTALLATION DE CSFML"
     sh binstall_files/build_csfml install
 	echo ""
