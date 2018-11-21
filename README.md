@@ -71,7 +71,9 @@ cd script-installation-epitech-macos/
 Puis suivez les instructions à l'écran.
 
 ## Acknowledgments
-
+Pour compléter, si vous souhaitez ajouter le coding-style EPITECH à votre installation Clion; allez sur cette page !
+https://github.com/Musicalink/epitech-clion-2018
+@Musicalink merci pour ta bravoure
 * script fait en bash
 * Inspiration de Guillaume Cauchois
 * Les marques Epitech, Bocal, et Epitech Content appartiennent à Epitech EU.
