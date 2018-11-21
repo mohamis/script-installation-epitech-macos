@@ -52,7 +52,6 @@ function start()
 
 	echo " ## INSTALLATION DE BLIH"
 	echo "MOT DE PASSE MACHINE ICI POUR COPIER:"
-	source /sources/blih
 	sudo cp -r blih /usr/bin/
 	echo "DONE"
 	echo ""
@@ -70,7 +69,6 @@ function start()
 	echo ""
 
 	echo " ## INSTALLATION DE CSFML"
-	source /sources/build_csfml
     sudo sh build_csfml install
 	echo ""
 }
