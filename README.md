@@ -58,7 +58,7 @@ Ensuite allez dans le repo fraîchement clone et procèdez à l'initialisation d
 
 ```
 cd script-installation-epitech-macos/
-sudo ./setup
+./setup
 ```
 
 Puis suivez les instructions à l'écran.
