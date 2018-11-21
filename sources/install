@@ -1,4 +1,5 @@
 #!/bin/bash
+source build_csfml
 
 function start()
 {
@@ -49,7 +50,8 @@ function start()
 	echo ""
 
 	echo " ## INSTALLATION DE BLIH"
-	sudo cp ../binstall_files/assets/blih /usr/bin/
+	echo "MOT DE PASSE MACHINE ICI POUR COPIER:"
+	sudo cp assets/blih /usr/bin/
 	echo "DONE"
 	echo ""
 
@@ -66,6 +68,6 @@ function start()
 	echo ""
 
 	echo " ## INSTALLATION DE CSFML"
-    sudo sh binstall_files/build_csfml install
+    sudo sh build_csfml install
 	echo ""
 }

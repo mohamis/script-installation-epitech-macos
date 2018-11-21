@@ -9,16 +9,22 @@ function config
 	cp -R ./assets/.emacs/epitech/std_comment.el ~/.emacs.d/epitech/std_comment.el
 	echo "Done"
 	echo ""
+	read -p "Démarrer la génération d'une clé SSH ? (o/n)" CHOICE_START
 
-	echo " ## GENERATION D'UNE CLEF SSH"
-	ssh-keygen
-	echo "Done"
-	echo ""
+	if [[ $CHOICE_START =~ ^[Oo]$ ]]; then
+		echo " ## GENERATION D'UNE CLEF SSH"
+		ssh-keygen
+		echo "Done"
+		echo ""
+		sleep 1
+		echo " ## UPLOAD DE LA CLEF SSH"
+		echo "Entrez votre login EPITECH"
+		read LOGIN
+		blih -u $LOGIN sshkey upload
+		echo "Done"
+		echo ""
+	else
+		echo "Aborted..."
+	fi
 
-	echo " ## UPLOAD DE LA CLEF SSH"
-	echo "Entrez votre login EPITECH"
-	read LOGIN
-	blih -u $LOGIN sshkey upload
-	echo "Done"
-	echo ""
 }
