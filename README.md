@@ -40,6 +40,9 @@ Ce script procède à ces installations :
 ## Getting Started
 
 Tout d'abord, sachez que j'ai fais ce script rapidement, il n'est peut-être pas encore fonctionnel à 100%, si vous rencontrez le moindre problème, contactez moi !
+
+Screenshot :
+![alt text](screenshot.png)
 ### Prérequis
 
 Vous avez besoin de :
