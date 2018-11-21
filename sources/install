@@ -69,6 +69,6 @@ function start()
 	echo ""
 
 	echo " ## INSTALLATION DE CSFML"
-    sudo sh ./assets/build_csfml install
+    brew install csfml
 	echo ""
 }
