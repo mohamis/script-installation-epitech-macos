@@ -52,7 +52,7 @@ function start()
 
 	echo " ## INSTALLATION DE BLIH"
 	echo "MOT DE PASSE MACHINE ICI POUR COPIER:"
-	cp blih /usr/bin/
+	sudo cp ./assets/blih /usr/bin/
 	echo "DONE"
 	echo ""
 
