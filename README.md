@@ -15,8 +15,8 @@ Il vous permet :
 - Mise à jour complète des sources
 - Mise à jour complète du système
 Ce script procède à ces installations :
-    - Installation de Brew
-	  - Installation de Terminator 
+    	  - Installation de Brew
+	  - Installation de iTerm2 
 	  - Installation de tree 
 	  - Installation de GIT 
 	  - Installation de ZSH 
