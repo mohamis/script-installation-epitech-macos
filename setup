@@ -2,8 +2,6 @@
 source sources/display
 source sources/launcher
 source sources/install
-source sources/build_csfml
-source sources/blih
 source binstall_files/config_s
 
 clear

@@ -1,5 +1,4 @@
 #!/bin/bash
-source binstall_files/epitech-emacs/INSTALL.sh
 function config
 {
 	echo " ## INSTALLATION DE LA CONFIGURATION EMACS"
