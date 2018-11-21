@@ -1,10 +1,6 @@
 #!/bin/bash
-source sources/display
-source sources/launcher
-source sources/install
-source binstall_files/config_s
-source sources/build_csfml
-source sources/blih
+source build_csfml
+source blih
 
 function start()
 {
