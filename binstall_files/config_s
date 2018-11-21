@@ -1,0 +1,24 @@
+#!/bin/bash
+source binstall_files/epitech-emacs/INSTALL.sh
+function config
+{
+	echo " ## INSTALLATION DE LA CONFIGURATION EMACS"
+	cp -R ./assets/.emacs ~/.emacs
+	mkdir -p ~/.emacs
+	mkdir -p ~/.emacs/epitech/
+	cp -R ./assets/.emacs/epitech/std_comment.el ~/.emacs.d/epitech/std_comment.el
+	echo "Done"
+	echo ""
+
+	echo " ## GENERATION D'UNE CLEF SSH"
+	ssh-keygen
+	echo "Done"
+	echo ""
+
+	echo " ## UPLOAD DE LA CLEF SSH"
+	echo "Entrez votre login EPITECH"
+	read LOGIN
+	blih -u $LOGIN sshkey upload
+	echo "Done"
+	echo ""
+}

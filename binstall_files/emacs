@@ -1,0 +1,11 @@
+;;
+;; EPITECH PROJECT, 2018
+;; epitech-emacs
+;; File description:
+;; autoload epitech configuration on startup
+;;
+;; Load header Epitech plugin
+
+(add-to-list 'load-path "~/.emacs.d/epitech/")
+(load "epitech/std.el")
+(load "epitech/std_comment.el")
