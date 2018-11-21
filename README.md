@@ -51,7 +51,7 @@ Voici comment utiliser le script.
 Il faut d'abord clone le repository
 
 ```
-git clone git@github.com:mohamis/script-installation-epitech-macos.git
+git clone https://github.com/mohamis/script-installation-epitech-macos.git
 ```
 
 Ensuite allez dans le repo fraîchement clone et procèdez à l'initialisation du script
