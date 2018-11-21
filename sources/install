@@ -1,0 +1,75 @@
+#!/bin/bash
+
+function start()
+{
+	echo " ## MISE A JOUR DES SOUCES"
+	echo " ## MISE A JOUR DU SYSTEME"
+    softwareupdate -l
+	echo ""
+
+	echo " ## Installation de Brew"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew doctor
+	echo ""
+
+	echo " ## INSTALLATION DE TERMINATOR"
+    brew install terminator
+	echo ""
+
+	echo " ## INSTALLATION DE TREE"
+    brew install tree
+	echo ""
+
+	echo " ## INSTALLATION DE GIT"
+    brew install git
+	echo ""
+
+	echo " ## INSTALLATION DE ZSH"
+    brew install zsh
+	echo ""
+
+	echo " ## INSTALLATION DE CURL"
+	brew install curl
+	echo ""
+
+	echo " ## INSTALLATION DE WGET"
+	brew install wget
+	echo ""
+
+	echo " ## INSTALLATION DE LIBNCURSES"
+    brew install ncurses
+	echo ""
+
+	echo " ## INSTALLATION DE VALGRIND"
+    brew install valgrind
+	echo ""
+
+	echo " ## INSTALLATION DE GDB"
+    brew install gdb
+	echo ""
+
+	echo " ## INSTALLATION DE BLIH"
+	sudo cp ./assets/blih /usr/bin/
+	echo "DONE"
+	echo ""
+
+	echo " ## INSTALLATION DE GCC"
+    brew install gcc
+	echo ""
+
+	echo " ## INSTALLATION DE CLANG"
+    brew install clang-format
+	echo ""
+
+	echo " ## INSTALLATION DE PYTHON"
+    brew install python3
+	echo ""
+
+	echo " ## INSTALLATION DE URLLIB"
+    python3 binstall_files/urllib3/setup install
+	echo ""
+
+	echo " ## INSTALLATION DE CSFML"
+    sh binstall_files/build_csfml install
+	echo ""
+}

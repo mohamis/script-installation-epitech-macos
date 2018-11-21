@@ -1,0 +1,38 @@
+#!/bin/bash
+
+function display_help()
+{
+	echo "Bienvenue !"
+	echo "Dernière mise à jour : 11/18 par Mohamed CHARA"
+	echo "_Ce script utilise la base Epitech-Emacs"
+	echo "_epitech-emacs Copyright (c) 2018 Jordan Demaison"
+	echo "_Idée original de Guillaume Cauchois"
+	echo "_Utilise le script build_csfml et blih de Epitech Content (c) 2018"
+	echo "_Pour tout autres problèmes contactez moi"
+	echo ""
+	echo "Ce script procède à ces installations :"
+	echo ""
+	echo " - Mise à jour complète des sources"
+	echo " - Mise à jour complète du système"
+	echo ""
+	echo " - Installation de Brew"
+	echo " - Installation de Terminator"
+	echo " - Installation de tree"
+	echo " - Installation de GIT"
+	echo " - Installation de ZSH"
+	echo " - Installation de curl"
+	echo " - Installation de wget"
+	echo " - Installation de la ncurses"
+	echo " - Installation de valgrind"
+	echo " - Installation de GDB"
+	echo " - Installation de BLIH"
+	echo " - Installation de gcc"
+	echo " - Installation de clang"
+	echo " - Installation de python"
+	echo " - Installation de csfml"
+	echo ""
+	echo " - Génération d'une clef SSH"
+	echo " - Upload de la clef SSH sur blih"
+
+	return 0;
+}
