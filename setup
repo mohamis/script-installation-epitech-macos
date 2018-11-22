@@ -2,6 +2,9 @@
 source sources/display
 source sources/launcher
 source sources/install
+source sources/update
+source sources/dlc
+source sources/applications
 source binstall_files/config_s
 
 clear
@@ -15,8 +18,9 @@ if [ ${?} = '0' ]; then
 	display_help
 	echo -e "\033[34;0;4;5;7mVERIFICATIONS\033[0m"
 	echo -e " "
-	echo -e "\e[91mCe script ne doit pas être lancé en tant que root user! "
+	echo -e "\e[31mCe script ne doit pas être lancé en tant que root user!\e[0m"
 	echo ""
+	if [ ! -f /usr/local/.installationdone ]; then
 	read -p "Démarrer l'installation ? (o/n)" CHOICE_START
 
 	if [[ $CHOICE_START =~ ^[Oo]$ ]]; then
@@ -29,10 +33,36 @@ if [ ${?} = '0' ]; then
 		echo "Configuration de l'environnement..."
 		sleep 3
 		config
-		echo "Pour lancer zsh executez < exec zsh > sur votre terminal."
+		echo "Pour lancer zsh utilisez la suite du script sur votre terminal."
+		read -p "Démarrer l'installation d'options? (o/n)" CHOICE_SECOND
+
+		if [[ $CHOICE_SECOND =~ ^[Oo]$ ]]; then
+			echo " ## LANCEMENT DU SCRIPT"
+			dlc
+			echo "Done"
+			echo ""
+		else
+			echo "Aborted..."
+		fi
+		read -p "Faire un Switch sur ZSH? (o/n)" CHOICE_ZSH
+
+		if [[ $CHOICE_ZSH =~ ^[Oo]$ ]]; then
+			echo " ## Lancement de Zsh"
+			sudo chsh -s /bin/zsh
+			echo "Done"
+			echo ""
+		else
+			echo "Aborted..."
+		fi
 		echo "Votre environnement de travail EPITECH est prêt, bon courage."
 	else
 		echo "Abort..."
+	fi
+	else 
+		echo "Installation File found!"
+		echo -e "\e[31mUne installation a été trouvée !\e[0m"
+		sleep 3
+		update
 	fi
 else
 	echo "Vous devez être connecté à internet pour utiliser ce script"

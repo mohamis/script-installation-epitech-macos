@@ -1,0 +1,26 @@
+#!/bin/bash
+
+function update()
+{
+		read -p "Mise à jour des packages ? (o/n)" CHOICE_FOUR
+
+		if [[ $CHOICE_FOUR =~ ^[Oo]$ ]]; then
+			echo " ## Lancement de l'installation des mises à jour !"
+			brew update && brew upgrade
+			echo "Done"
+			echo ""
+		else
+			echo "Aborted installation of nodeJS..."
+		fi
+
+		read -p "Mise à jour des options ? (o/n)" CHOICE_FIVE
+
+		if [[ $CHOICE_FIVE =~ ^[Oo]$ ]]; then
+			echo " ## Lancement de l'installation des options!"
+            dlc
+			echo "Done"
+			echo ""
+		else
+			echo "Aborted installation of ..."
+		fi
+}

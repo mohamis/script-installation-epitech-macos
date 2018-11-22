@@ -71,4 +71,9 @@ function start()
 	echo " ## INSTALLATION DE CSFML"
     brew install csfml
 	echo ""
+
+	echo " ## Vérification d'installation"
+	echo "MOT DE PASSE MACHINE ICI:"
+	sudo cp ./assets/.installationdone /usr/local/
+	echo ""
 }

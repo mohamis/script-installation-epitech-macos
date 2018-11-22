@@ -1,0 +1,62 @@
+#!/bin/bash
+
+function dlc()
+{
+        echo "Ce script procède à ces installations :"
+        echo ""
+        echo " - Installation d'alias"
+        echo " - Installation d'autres outils"
+        echo ""
+
+		read -p "Démarrer l'installation de Jetbrains Toolbox? (o/n)" CHOICE_SECOND
+
+		if [[ $CHOICE_SECOND =~ ^[Oo]$ ]]; then
+			echo " ## Lancement de l'installation de Jetbrains Toolbox"
+			brew cask install jetbrains-toolbox
+			echo "Done"
+			echo ""
+		else
+			echo "Aborted installation of Jetbrains..."
+		fi
+		
+		read -p "Démarrer l'installation de Visual Studio Code? (o/n)" CHOICE_VSCODE
+
+		if [[ $CHOICE_VSCODE =~ ^[Oo]$ ]]; then
+			echo " ## Lancement de l'installation de Visual Studio Code"
+			brew cask install visual-studio-code
+			echo "Done"
+			echo ""
+		else
+			echo "Aborted installation of Jetbrains..."
+		fi
+
+		read -p "Démarrer l'installation des modules NodeJS, Expo, React? (o/n)" CHOICE_THREE
+
+		if [[ $CHOICE_THREE =~ ^[Oo]$ ]]; then
+			echo " ## Lancement de l'installation de NodeJS, Expo, ReactJS, npm"
+			applications
+			echo "Done"
+			echo ""
+		else
+			echo "Aborted installation of nodeJS..."
+		fi
+
+		read -p "Mise à jour des packages ? (o/n)" CHOICE_FOUR
+
+		if [[ $CHOICE_FOUR =~ ^[Oo]$ ]]; then
+			echo " ## Lancement de l'installation des mises à jour !"
+			brew update && brew upgrade
+			echo "Done"
+			echo ""
+		else
+			echo "Aborted installation of Updates..."
+		fi
+
+		echo " ## FIN D'INSTALLATION DES ADDONS ## "
+
+        echo "Prochaine mise à jour :"
+        echo ""
+        echo " - Installation d'alias"
+        echo " - Installation de majs"
+        echo ""
+}

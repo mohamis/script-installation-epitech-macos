@@ -1,0 +1,21 @@
+#!/bin/bash
+
+function applications()
+{
+	echo " ## Début d'installation"
+	echo " ## Modules :"
+
+	echo " # INSTALLATION DE NODE.js"
+    brew install node
+    node -v
+    npm -v
+	echo ""
+
+	echo " # INSTALLATION DE React Native"
+    npm install -g react-native-cli
+	echo ""
+
+	echo " # INSTALLATION DE EXPO CLI"
+    npm install -g expo-cli
+	echo ""
+}
