@@ -24,6 +24,10 @@ if [ ${?} = '0' ]; then
 	read -p "Démarrer l'installation ? (o/n)" CHOICE_START
 
 	if [[ $CHOICE_START =~ ^[Oo]$ ]]; then
+		echo " ## Installation de Brew"
+		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		brew doctor
+		echo ""
 		start
 		echo ""
 		echo ""
