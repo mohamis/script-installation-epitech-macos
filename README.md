@@ -2,7 +2,7 @@
 Bienvenue sur mon Repository script-installation-epitech-macos !:+1:
 
 Ici, vous retrouverez un script permettant d'installer l'environnement Epitech sur vos Mac.
-- [x] Dernière mise à jour : 11/18 par Mohamed CHARA
+- [x] Dernière mise à jour : 03/01/19 par Mohamed CHARA
 
 ## Authors
 _Ce script utilise ces bases ci :
